@@ -1,0 +1,10 @@
+version: "3"
+services:
+  db:
+    image: postgres:11-alpine
+    environment:
+      POSTGRES_PASSWORD: apicp
+      POSTGRES_USER: apicp
+      POSTGRES_DB: apicp
+    ports:
+      - "5432:5432" 
